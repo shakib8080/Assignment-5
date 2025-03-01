@@ -20,8 +20,8 @@
                 <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
               </div>
             </div>
-            <div>
-                <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg  hover:bg-blue-300 ">Back to dask</button>
+            <div >
+                <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg   " id="btn-back">Back to dask</button>
             </div>
           </div>  
         </nav>
@@ -32,9 +32,13 @@
  <section >
     <div class="bg-[#FFFFFF] rounded-xl">
      <div class="p-4 mt-2">
-        <h2 class=" font-bold">Question-1: What are the different ways to select an element in the DOM?</h2>
+        <h2 class=" font-bold" id="q-id">Question-1: What are the different ways to select an element in the DOM?</h2>
         <hr class="mt-2 mb-2 text-gray-300">
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit voluptatum repudiandae non ullam molestias dignissimos neque magnam! Voluptates, veniam.</h1>
+        <h1> Selecting by ID: document.getElementById('elementId')</h1>
+        <h1>Selecting by Class Name:document.getElementsByClassName('className')</h1>
+        <h1>Selecting by Tag Name:document.getElementsByTagName('tagName')</h1>
+        <h1>Query Selector:document.querySelector('cssSelector')</h1>
+        <h1>Query Selector All:document.querySelectorAll('cssSelector')</h1>
      </div>
     </div>
     <div class="bg-[#FFFFFF] rounded-xl">
@@ -42,33 +46,41 @@
         <h2 class=" font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?
         </h2>
         <hr class="mt-2 mb-2 text-gray-300">
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit voluptatum repudiandae non ullam molestias dignissimos neque magnam! Voluptates, veniam.</h1>
+        <h1> Gets or sets the HTML content within an element, including HTML tags. and Gets or sets the visible text content of an element, respecting rendered styles.   
+        </h1>
      </div>
     </div>
     <div class="bg-[#FFFFFF] rounded-xl">
      <div class="p-4 mt-2">
         <h2 class=" font-bold">Question-3: What is event delegation in the DOM?</h2>
         <hr class="mt-2 mb-2 text-gray-300">
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit voluptatum repudiandae non ullam molestias dignissimos neque magnam! Voluptates, veniam.</h1>
+        <h1>Event delegation is a technique where a parent element handles events from multiple child elements using event bubbling, improving performance and handling dynamic elements.</h1>
      </div>
     </div>
     <div class="bg-[#FFFFFF] rounded-xl">
      <div class="p-4 mt-2">
         <h2 class=" font-bold">Question-4: What is event bubbling in the DOM?</h2>
         <hr class="mt-2 mb-2 text-gray-300">
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit voluptatum repudiandae non ullam molestias dignissimos neque magnam! Voluptates, veniam.</h1>
+        <h1>Event bubbling is a process where, when you click on an element (like a button), the event first happens on that element, and then it "bubbles" up to its parent elements (like a div or body), triggering events on them as well.</h1>
      </div>
     </div>
     <div class="bg-[#FFFFFF] rounded-xl">
      <div class="p-4 mt-2">
         <h2 class=" font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
         <hr class="mt-2 mb-2 text-gray-300">
-        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia sit voluptatum repudiandae non ullam molestias dignissimos neque magnam! Voluptates, veniam.</h1>
+        <h1>To create a new HTML element in JavaScript, you can use document.createElement()</h1>
+        <h1>and  remove an element, you can use removeChild(). First, you need to select the element you want to remove. </h1>
+        <h1> you can add it to your webpage using appendChild()</h1>
      </div>
     </div>
  </section>
 </section>
 
+<!-- script  -->
+    <script>
+  
+    </script>
     <script src="index.js"></script>
+    <script src="index2.js"></script>
 </body>
 </html>
