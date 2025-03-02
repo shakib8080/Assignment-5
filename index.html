@@ -1,233 +1,331 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment-5</title>
     <!-- tailwind cdn -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- tailwind cdn -->
-</head>
-<body class="bg-[#F4F7FF]">
+  </head>
+  <body class="bg-[#F4F7FF]">
     <!-- main section -->
-<section class="w-11/12 mx-auto pt-5">
-    <header >
+    <section class="w-11/12 mx-auto pt-5">
+      <header>
         <nav class="bg-[#FFFFFF] rounded-xl">
           <div class="flex justify-between items-center p-3">
             <div>
               <div class="flex items-center gap-4">
-                <img src="assets/logo.png" alt="">
-                <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
+                <img src="assets/logo.png" alt="" />
+                <h1 class="text-3xl">
+                  Dev<span class="font-bold">Board</span>
+                </h1>
               </div>
             </div>
             <div>
-             <div class="flex gap-10 items-center">
-                <div  class=" flex gap-4 items-center bg-[#F4F7FF] rounded-2xl p-3">
-                    <img src="assets/checkbox.png" alt=""> 
-                    <h2 class="text-3xl font-bold">23</h2>
+              <div class="flex gap-10 items-center">
+                <div
+                  class="flex gap-4 items-center bg-[#F4F7FF] rounded-2xl p-3"
+                >
+                  <img src="assets/checkbox.png" alt="" />
+                  <h2 class="text-3xl font-bold">23</h2>
                 </div>
-                <div class="bg-[#F4F7FF] p-2 rounded-full" id="theme-btn"><img src="assets/theme-btn.png" alt=""></div>
-             </div>
+                <div class="bg-[#F4F7FF] p-2 rounded-full" id="theme-btn">
+                  <img src="assets/theme-btn.png" alt="" />
+                </div>
+              </div>
             </div>
-          </div>  
+          </div>
         </nav>
-    </header>
+      </header>
 
-<!-- main -->
- <main class="">
-  <section class="flex gap-2 mt-3 ">
-    <div class="w-9/12 bg-[#FFFFFF] rounded-xl">
-      <!-- taslasign parent  -->
-     <div class="grid grid-cols-3 gap-3 mx-5 my-5  ">
-      <!-- child  1 -->
-      <div class="flex items-center gap-4 justify-center bg-[#F4F7FF] px-3 rounded-xl">
-      <div>
-        <img src="assets/checkbox.png" alt="">
-      </div>
-      <div>
-        <h2 class="font-bold">Task Assigned</h2>
-        <h2 class="text-2xl font-bold" id="task">06</h2>
-      </div>
-      </div>
-      <!-- child  2  -->
-      <div class="flex items-center gap-4 px-3 py-3 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg  hover:border-2" id="clicTO-Q-page">
-       <div >
-        <img src="assets/board.png" alt="">
-      </div>
-       <div>
-        <p class="font-bold">Discover Something <br> New Today! </p>
-      </div>
-      </div>
-      <!-- child 3 -->
-      <div class="flex items-center gap-4 bg-[#F4F7FF] justify-center rounded-lg px-3">
-       <div>
-        <img src="assets/calender.png" alt="">
-       </div>
-       <div>
-        <p class="text-2xl font-bold">Today</p>
-        <p class="text-2xl" id="new-date">Wed ,<br>
-          <span class="font-bold">Jul 28 2025</span></p>
-       </div>
-      </div>
-     </div>
+      <!-- main -->
+      <main class="">
+        <section class="flex gap-2 mt-3">
+          <div class="w-9/12 bg-[#FFFFFF] rounded-xl">
+            <!-- taslasign parent  -->
+            <div class="grid lg:grid-cols-3 gap-3 mx-5 my-5">
+              <!-- child  1 -->
+              <div
+                class="flex items-center gap-4 justify-center bg-[#F4F7FF] px-3 rounded-xl"
+              >
+                <div>
+                  <img src="assets/checkbox.png" alt="" />
+                </div>
+                <div>
+                  <h2 class="font-bold">Task Assigned</h2>
+                  <h2 class="text-2xl font-bold" id="task">06</h2>
+                </div>
+              </div>
+              <!-- child  2  -->
+              <div
+                class="flex items-center gap-4 px-3 py-3 bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] rounded-lg hover:border-2"
+                id="clicTO-Q-page"
+              >
+                <div>
+                  <img src="assets/board.png" alt="" />
+                </div>
+                <div>
+                  <p class="font-bold">
+                    Discover Something <br />
+                    New Today! 
+                  </p>
+                </div>
+              </div>
+              <!-- child 3 -->
+              <div
+                class="flex items-center gap-4 bg-[#F4F7FF] justify-center rounded-lg px-3"
+              >
+                <div>
+                  <img src="assets/calender.png" alt="" />
+                </div>
+                <div>
+                  <p class="text-2xl font-bold">Today</p>
+                  <p class="text-2xl" id="new-date">
+                    Wed ,<br />
+                    <span class="font-bold">Jul 28 2025</span>
+                  </p>
+                </div>
+              </div>
+            </div>
 
-      <!-- card section  -->
-     
-    <section class="my-5 mx-5">
-      <!--  card parent div -->
-     <div class="grid grid-cols-3 gap-3">
-      <!-- card 1 -->
-      <div class="bg-[#F4F7FF] rounded-xl ">
-        <div class="p-5 space-y-3">
-        <div class="bg-[#FFFFFF] w-24 rounded-xl"><p class="p-2 text-center font-bold text-gray-500">ShopEase</p></div>
-        <h1 class="text-xl font-bold" id="fix-mobile">Fix Mobile Button Issue </h1>
-        <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">Debug using Chrome DevTools, check for overlapping elements.</p>
-        <!-- card footer div parent  -->
-        <div class="flex items-center gap-4">
-          <!-- child 1 -->
-         <div>
-          <p class="font-bold text-gray-500">Deadline</p>
-          <h1 class="text-[#00303C] font-bold ">21 March 2025</h1>
-         </div>
-         <!-- child 2  -->
-          <div >
-            <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300"id="card-btn-1">completed</button>
-          </div>
-        </div>
-        </div>
-      </div>
-      <!-- card 2  -->
-      <div class="bg-[#F4F7FF] rounded-xl ">
-        <div class="p-5 space-y-3">
-        <div class="bg-[#FFFFFF] w-24 rounded-xl"><p class="p-2 text-center font-bold text-gray-500">CloudSync</p></div>
-        <h1 class="text-xl font-bold" id="Dark">Add Dark Mode </h1>
-        <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">Store the user's preference in localStorage, update CSS variables dynamically.</p>
-        <!-- card footer div parent  -->
-        <div class="flex items-center gap-4">
-          <!-- child 1 -->
-         <div>
-          <p class="font-bold text-gray-500">Deadline</p>
-          <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
-         </div>
-         <!-- child 2  -->
-          <div>
-            <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300" id="card-btn-2">completed</button>
-          </div>
-        </div>
-        </div>
-      </div>
-      <!-- card 3  -->
-      <div class="bg-[#F4F7FF] rounded-xl ">
-        <div class="p-5 space-y-3">
-        <div class="bg-[#FFFFFF] w-24 rounded-xl"><p class="p-2 text-center font-bold text-gray-500">Swiftpay</p></div>
-        <h1 class="text-xl font-bold" id="Optimize">Optimize  Home page </h1>
-        <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">Debug using Chrome DevTools, check for overlapping elements.</p>
-        <!-- card footer div parent  -->
-        <div class="flex items-center gap-4">
-          <!-- child 1 -->
-         <div>
-          <p class="font-bold text-gray-500">Deadline</p>
-          <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
-         </div>
-         <!-- child 2  -->
-          <div>
-            <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300" id="card-btn-3">completed</button>
-          </div>
-        </div>
-        </div>
-      </div>
-      <!-- card 4  -->
-      <div class="bg-[#F4F7FF] rounded-xl ">
-        <div class="p-5 space-y-3">
-        <div class="bg-[#FFFFFF] w-24 rounded-xl"><p class="p-2 text-center font-bold text-gray-500">Meta</p></div>
-        <h1 class="text-xl font-bold" id="Emoji">Add New Emoji</h1>
-        <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">Debug using Chrome DevTools, check for overlapping elements.</p>
-        <!-- card footer div parent  -->
-        <div class="flex items-center gap-4">
-          <!-- child 1 -->
-         <div>
-          <p class="font-bold text-gray-500">Deadline</p>
-          <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
-         </div>
-         <!-- child 2  -->
-          <div>
-            <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300" id="card-btn-4">completed</button>
-          </div>
-        </div>
-        </div>
-      </div>
-      <!-- card 5  -->
-      <div class="bg-[#F4F7FF] rounded-xl ">
-        <div class="p-5 space-y-3">
-        <div class="bg-[#FFFFFF] w-24 rounded-xl"><p class="p-2 text-center font-bold text-gray-500">Google</p></div>
-        <h1 class="text-xl font-bold"id="Integrate">Integrate OpenAI API </h1>
-        <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">Debug using Chrome DevTools, check for overlapping elements.</p>
-        <!-- card footer div parent  -->
-        <div class="flex items-center gap-4">
-          <!-- child 1 -->
-         <div>
-          <p class="font-bold text-gray-500">Deadline</p>
-          <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
-         </div>
-         <!-- child 2  -->
-          <div>
-            <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300" id="card-btn-5">completed</button>
-          </div>
-        </div>
-        </div>
-      </div>
-      <!-- card 6 -->
-      <div class="bg-[#F4F7FF] rounded-xl ">
-        <div class="p-5 space-y-3">
-        <div class="bg-[#FFFFFF] w-24 rounded-xl"><p class="p-2 text-center font-bold text-gray-500">ShopEase</p></div>
-        <h1 class="text-xl font-bold" id="Mobile"> Mobile Button Issue </h1>
-        <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">Debug using Chrome DevTools, check for overlapping elements.</p>
-        <!-- card footer div parent  -->
-        <div class="flex items-center gap-4">
-          <!-- child 1 -->
-         <div>
-          <p class="font-bold text-gray-500">Deadline</p>
-          <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
-         </div>
-         <!-- child 2  -->
-          <div>
-            <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300" id="card-btn-6">completed</button>
-          </div>
-        </div>
+            <!-- card section  -->
 
-        </div>
-      </div>
-     </div>
+            <section class="my-5 mx-5">
+              <!--  card parent div -->
+              <div class="grid lg:grid-cols-3 gap-3">
+                <!-- card 1 -->
+                <div class="bg-[#F4F7FF] rounded-xl">
+                  <div class="p-5 space-y-3">
+                    <div class="bg-[#FFFFFF] w-24 rounded-xl">
+                      <p class="p-2 text-center font-bold text-gray-500">
+                        ShopEase
+                      </p>
+                    </div>
+                    <h1 class="text-xl font-bold" id="fix-mobile">
+                      Fix Mobile Button Issue
+                    </h1>
+                    <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">
+                      Debug using Chrome DevTools, check for overlapping
+                      elements.
+                    </p>
+                    <!-- card footer div parent  -->
+                    <div class="flex items-center gap-4">
+                      <!-- child 1 -->
+                      <div>
+                        <p class="font-bold text-gray-500">Deadline</p>
+                        <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
+                      </div>
+                      <!-- child 2  -->
+                      <div>
+                        <button
+                          class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300"
+                          id="card-btn-1"
+                        >
+                          completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 2  -->
+                <div class="bg-[#F4F7FF] rounded-xl">
+                  <div class="p-5 space-y-3">
+                    <div class="bg-[#FFFFFF] w-24 rounded-xl">
+                      <p class="p-2 text-center font-bold text-gray-500">
+                        CloudSync
+                      </p>
+                    </div>
+                    <h1 class="text-xl font-bold" id="Dark">Add Dark Mode</h1>
+                    <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">
+                      Store the user's preference in localStorage, update CSS
+                      variables dynamically.
+                    </p>
+                    <!-- card footer div parent  -->
+                    <div class="flex items-center gap-4">
+                      <!-- child 1 -->
+                      <div>
+                        <p class="font-bold text-gray-500">Deadline</p>
+                        <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
+                      </div>
+                      <!-- child 2  -->
+                      <div>
+                        <button
+                          class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300"
+                          id="card-btn-2"
+                        >
+                          completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 3  -->
+                <div class="bg-[#F4F7FF] rounded-xl">
+                  <div class="p-5 space-y-3">
+                    <div class="bg-[#FFFFFF] w-24 rounded-xl">
+                      <p class="p-2 text-center font-bold text-gray-500">
+                        Swiftpay
+                      </p>
+                    </div>
+                    <h1 class="text-xl font-bold" id="Optimize">
+                      Optimize Home page 
+                    </h1>
+                    <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">
+                      Debug using Chrome DevTools, check for overlapping
+                      elements.
+                    </p>
+                    <!-- card footer div parent  -->
+                    <div class="flex items-center gap-4">
+                      <!-- child 1 -->
+                      <div>
+                        <p class="font-bold text-gray-500">Deadline</p>
+                        <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
+                      </div>
+                      <!-- child 2  -->
+                      <div>
+                        <button
+                          class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300"
+                          id="card-btn-3"
+                        >
+                          completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 4  -->
+                <div class="bg-[#F4F7FF] rounded-xl">
+                  <div class="p-5 space-y-3">
+                    <div class="bg-[#FFFFFF] w-24 rounded-xl">
+                      <p class="p-2 text-center font-bold text-gray-500">
+                        Meta
+                      </p>
+                    </div>
+                    <h1 class="text-xl font-bold" id="Emoji">Add New Emoji</h1>
+                    <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">
+                      Debug using Chrome DevTools, check for overlapping
+                      elements.
+                    </p>
+                    <!-- card footer div parent  -->
+                    <div class="flex items-center gap-4">
+                      <!-- child 1 -->
+                      <div>
+                        <p class="font-bold text-gray-500">Deadline</p>
+                        <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
+                      </div>
+                      <!-- child 2  -->
+                      <div>
+                        <button
+                          class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300"
+                          id="card-btn-4"
+                        >
+                          completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 5  -->
+                <div class="bg-[#F4F7FF] rounded-xl">
+                  <div class="p-5 space-y-3">
+                    <div class="bg-[#FFFFFF] w-24 rounded-xl">
+                      <p class="p-2 text-center font-bold text-gray-500">
+                        Google
+                      </p>
+                    </div>
+                    <h1 class="text-xl font-bold" id="Integrate">
+                      Integrate OpenAI API
+                    </h1>
+                    <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">
+                      Debug using Chrome DevTools, check for overlapping
+                      elements.
+                    </p>
+                    <!-- card footer div parent  -->
+                    <div class="flex items-center gap-4">
+                      <!-- child 1 -->
+                      <div>
+                        <p class="font-bold text-gray-500">Deadline</p>
+                        <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
+                      </div>
+                      <!-- child 2  -->
+                      <div>
+                        <button
+                          class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300"
+                          id="card-btn-5"
+                        >
+                          completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 6 -->
+                <div class="bg-[#F4F7FF] rounded-xl">
+                  <div class="p-5 space-y-3">
+                    <div class="bg-[#FFFFFF] w-24 rounded-xl">
+                      <p class="p-2 text-center font-bold text-gray-500">
+                        ShopEase
+                      </p>
+                    </div>
+                    <h1 class="text-xl font-bold" id="Mobile">
+                      Mobile Button Issue
+                    </h1>
+                    <p class="bg-[#FFFFFF] p-4 rounded-xl text-gray-500">
+                      Debug using Chrome DevTools, check for overlapping
+                      elements.
+                    </p>
+                    <!-- card footer div parent  -->
+                    <div class="flex items-center gap-4">
+                      <!-- child 1 -->
+                      <div>
+                        <p class="font-bold text-gray-500">Deadline</p>
+                        <h1 class="text-[#00303C] font-bold">21 March 2025</h1>
+                      </div>
+                      <!-- child 2  -->
+                      <div>
+                        <button
+                          class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg hover:bg-blue-300"
+                          id="card-btn-6"
+                        >
+                          completed
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <!-- history section main   -->
+          <div class="w-3/12 bg-[#FFFFFF] rounded-xl">
+            <!-- Activity log div -->
+            <div class="flex justify-center gap-4 mt-5 items-center">
+              <img src="assets/activity.png" alt="" />
+              <h1 class="font-bold text-sm lg:font-bold lg:text-xl">
+                Activity Log
+              </h1>
+            </div>
+            <!-- clear history btn  -->
+            <div class="flex justify-center">
+              <button
+                class="bg-[#3752FD] py-2 px-2 lg:px-4 text-white font-bold rounded-lg mt-4 hover:bg-blue-300"
+                id="clear-btn"
+              >
+                Clear History
+              </button>
+            </div>
+            <!-- history div  -->
+            <div id="history-id" class="mt-2 flex flex-col gap-10 mx-4"></div>
+          </div>
+        </section>
+      </main>
     </section>
-    </div>
 
-    <!-- history section main   -->
-    <div class="w-3/12 bg-[#FFFFFF] rounded-xl">
-      <!-- Activity log div -->
-     <div class="flex justify-center gap-4 mt-5 items-center">
-      <img src="assets/activity.png" alt="">
-      <h1 class="font-bold text-xl">Activity Log</h1>
-     </div>
-     <!-- clear history btn  -->
-     <div class="flex justify-center">
-      <button class="bg-[#3752FD] py-2 px-4 text-white font-bold rounded-lg mt-4 hover:bg-blue-300 " id="clear-btn">Clear History</button>
-    </div>
-     <!-- history div  -->
-     <div id="history-id" class="mt-2 flex flex-col gap-10 mx-4">
-      
-     </div>
-    
-    </div>
-  </section>
- </main>
-</section>
-
-<!-- script  -->
-    <script>
-
-    </script>
-        <script src="index.js"></script>
-        <script src="index2.js"></script>
-    
-</body>
+    <!-- script  -->
+    <script></script>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
+  </body>
 </html>
