@@ -19,9 +19,10 @@ document.getElementById('card-btn-1')
     const fixMobiledata = document.getElementById("fix-mobile").innerText
     const div1 = document.createElement('div')
     const date = new Date()
+    const naw = date.toLocaleTimeString()
     div1.innerHTML=`
     <p>you have complete the task <span class ="font-bold"> ${fixMobiledata}</span></p>
-    <p>date: ${date}</p>
+    <ip class= "font-bold">issue at : ${naw}</ip>
     `
     const historyDiv = document.getElementById('history-id')
     historyDiv.appendChild(div1);
@@ -34,6 +35,10 @@ document.getElementById('card-btn-1')
     let button = 1 ;
     result = convertTask - button;
     document.getElementById('task').innerText =result
+    const historyTask = document.getElementById('history-task').innerText
+    const convertedTaskHistory = parseInt(historyTask);
+    const result2 = convertedTaskHistory + button;
+    document.getElementById('history-task').innerText = result2
     this.setAttribute('disabled',true);
     document.getElementById('card-btn-1').style.backgroundColor ='gray'
 
@@ -52,9 +57,10 @@ document.getElementById('card-btn-1')
     const Dark = document.getElementById("Dark").innerText
     const div2 = document.createElement('div')
     const date = new Date()
+    const naw = date.toLocaleTimeString()
     div2.innerHTML=`
     <p>you have complete the task<span class ="font-bold"> ${Dark}</span></p>
-    <p>date: ${date}</p>
+   <ip class= "font-bold">issue at : ${naw}</ip>
     `
     const historyDiv = document.getElementById('history-id')
     historyDiv.appendChild(div2);
@@ -68,6 +74,10 @@ document.getElementById('card-btn-1')
     let button = 1 ;
     result = convertTask - button;
     document.getElementById('task').innerText =result
+    const historyTask = document.getElementById('history-task').innerText
+    const convertedTaskHistory = parseInt(historyTask);
+    const result2 = convertedTaskHistory + button;
+    document.getElementById('history-task').innerText = result2
      this.setAttribute('disabled',true);
     document.getElementById('card-btn-2').style.backgroundColor ='gray'
    
@@ -81,9 +91,10 @@ document.getElementById('card-btn-1')
     const Optimize = document.getElementById("Optimize").innerText
     const div3 = document.createElement('div')
     const date = new Date()
+    const naw = date.toLocaleTimeString()
     div3.innerHTML=`
     <p>you have complete the task <span class ="font-bold"> ${Optimize}</span></p>
-    <p>date: ${date}</p>
+   <ip class= "font-bold">issue at : ${naw}</ip>
     `
     const historyDiv = document.getElementById('history-id')
     historyDiv.appendChild(div3);
@@ -97,6 +108,10 @@ document.getElementById('card-btn-1')
     let button = 1 ;
     result = convertTask - button;
     document.getElementById('task').innerText =result
+    const historyTask = document.getElementById('history-task').innerText
+    const convertedTaskHistory = parseInt(historyTask);
+    const result2 = convertedTaskHistory + button;
+    document.getElementById('history-task').innerText = result2
      this.setAttribute('disabled',true);
     document.getElementById('card-btn-3').style.backgroundColor ='gray'
    
@@ -109,9 +124,10 @@ document.getElementById('card-btn-1')
     const Emoji = document.getElementById("Emoji").innerText
     const div4 = document.createElement('div')
     const date = new Date()
+    const naw = date.toLocaleTimeString()
     div4.innerHTML=`
     <p>you have complete the task <span class ="font-bold"> ${Emoji}</span></p>
-    <p>date: ${date}</p>
+    <ip class= "font-bold">issue at : ${naw}</ip>
     `
     const historyDiv = document.getElementById('history-id')
     historyDiv.appendChild(div4);
@@ -125,6 +141,10 @@ document.getElementById('card-btn-1')
     let button = 1 ;
     result = convertTask - button;
     document.getElementById('task').innerText =result
+    const historyTask = document.getElementById('history-task').innerText
+    const convertedTaskHistory = parseInt(historyTask);
+    const result2 = convertedTaskHistory + button;
+    document.getElementById('history-task').innerText = result2
      this.setAttribute('disabled',true);
     document.getElementById('card-btn-4').style.backgroundColor ='gray'
    
@@ -138,9 +158,10 @@ document.getElementById('card-btn-1')
     const Integrate = document.getElementById("Integrate").innerText
     const div5 = document.createElement('div')
     const date = new Date()
+    const naw = date.toLocaleTimeString()
     div5.innerHTML=`
     <p>you have complete the task <span class ="font-bold"> ${Integrate}</span></p>
-    <p>date: ${date}</p>
+    <ip class= "font-bold">issue at : ${naw}</ip>
     `
     const historyDiv = document.getElementById('history-id')
     historyDiv.appendChild(div5);
@@ -154,6 +175,10 @@ document.getElementById('card-btn-1')
     let button = 1 ;
     result = convertTask - button;
     document.getElementById('task').innerText =result
+    const historyTask = document.getElementById('history-task').innerText
+    const convertedTaskHistory = parseInt(historyTask);
+    const result2 = convertedTaskHistory + button;
+    document.getElementById('history-task').innerText = result2
      this.setAttribute('disabled',true);
     document.getElementById('card-btn-5').style.backgroundColor ='gray'
    
@@ -168,9 +193,10 @@ document.getElementById('card-btn-1')
     const Mobile = document.getElementById("Mobile").innerText
     const div6 = document.createElement('div')
     const date = new Date()
+    const naw = date.toLocaleTimeString();
     div6.innerHTML=`
     <p>you have complete the task <span class ="font-bold"> ${Mobile}</span></p>
-    <p>date: ${date}</p>
+   <ip class= "font-bold">issue at : ${naw}</ip>
     `
     const historyDiv = document.getElementById('history-id')
     historyDiv.appendChild(div6);
@@ -183,8 +209,12 @@ document.getElementById('card-btn-1')
     const task = document.getElementById('task').innerText
     const convertTask = parseInt(task)
     let button = 1 ;
-    result = convertTask - button;
-    document.getElementById('task').innerText =result
+    result1 = convertTask - button;
+    document.getElementById('task').innerText = result1
+    const historyTask = document.getElementById('history-task').innerText
+    const convertedTaskHistory = parseInt(historyTask);
+    const result2 = convertedTaskHistory + button;
+    document.getElementById('history-task').innerText = result2
      this.setAttribute('disabled',true);
     document.getElementById('card-btn-6').style.backgroundColor ='gray'
    
@@ -198,6 +228,31 @@ document.getElementById('clear-btn')
 .addEventListener('click',function(event){
     event.preventDefault()
     document.getElementById('history-id').innerHTML= " "
+    document.getElementById('task').innerText = '6'
+    document.getElementById('history-task').innerText = '23'
+    const visibleBtn = document.getElementById('card-btn-1')
+    visibleBtn.disabled = false
+    visibleBtn.style.backgroundColor= 'blue'
+
+    const visibleBtn2 = document.getElementById('card-btn-2')
+    visibleBtn2.disabled = false
+    visibleBtn2.style.backgroundColor= 'blue'
+
+    const visibleBtn3 = document.getElementById('card-btn-3')
+    visibleBtn3.disabled = false
+    visibleBtn3.style.backgroundColor= 'blue'
+
+    const visibleBtn4 = document.getElementById('card-btn-4')
+    visibleBtn4.disabled = false
+    visibleBtn4.style.backgroundColor= 'blue'
+
+    const visibleBtn5 = document.getElementById('card-btn-5')
+    visibleBtn5.disabled = false
+    visibleBtn5.style.backgroundColor= 'blue'
+
+    const visibleBtn6 = document.getElementById('card-btn-6')
+    visibleBtn6.disabled = false
+    visibleBtn6.style.backgroundColor= 'blue'
 })
 
 
